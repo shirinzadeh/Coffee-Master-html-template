@@ -221,6 +221,14 @@ font-family: 'Kaushan Script', cursive;
     font-size: 24px;
 }
 
+.column-content {
+    padding: .5rem;
+}
+
+.column-content:nth-child(even) {
+    box-shadow: 0px 6px 15px -7px var(--secondary-color);
+}
+
 .first-column{
     position: relative;
 }
@@ -228,6 +236,11 @@ font-family: 'Kaushan Script', cursive;
     position: absolute;
     bottom: 5rem;
     left: 0;
+    z-index: 0;
+}
+
+.welcome-img1 {
+    z-index: -1;
 }
 
 #welcome-info{
@@ -1002,6 +1015,14 @@ font-family: 'Kaushan Script', cursive;
         width: 25%;
     }
 
+    .column-content {
+        box-shadow: none !important;
+    }
+
+    .offer-image {
+        width: 80% !important;
+    }
+
     .brunch-img, .happyhour-img{
         height: 37rem !important;
     }
@@ -1027,17 +1048,26 @@ font-family: 'Kaushan Script', cursive;
         display: inline !important;
     }
 
+    .cbp-caption-activeWrap {
+        display: none;
+    }
+
     .main-content{
-        margin-bottom: 30rem;
+        min-height:200vh;
+        z-index:1;
+        background-color: #fff;
+        margin-bottom: 0;
     }
     
     #footer{
-        height: 30rem;
+        padding: 4rem 0;
+        background-color: var(--footer-bg-color);
+        position: static;
     }
 
     #footer .footer-btn{
         position: absolute;
-        top:5.5248rem;
+        top: 3.5rem;
         padding: .1rem .5rem;
     }
 }
@@ -1127,12 +1157,18 @@ font-family: 'Kaushan Script', cursive;
     #news .fourth-card{
         display: none !important;
     }
+
+    #work .cbp-l-filters-alignCenter .cbp-filter-item {
+        font-size: 12px;
+        margin:0;
+    }
     
     .main-content{
         margin-bottom: 40rem;
     }
     #footer{
         height: 40rem;
+        position: fixed;
     }
 
     #footer .footer-btn{
@@ -1189,12 +1225,17 @@ font-family: 'Kaushan Script', cursive;
         width: 45% !important;
     }
 
+    #work {
+        display: none;
+    }
+
     .main-content{
         margin-bottom: 50rem;
     }
 
     #footer{
         height: 50rem;
+        position: fixed;
     }
 
     #footer .footer-btn{
