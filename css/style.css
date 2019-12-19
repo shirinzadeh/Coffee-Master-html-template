@@ -115,6 +115,14 @@ a {
     color: #fff;
 }
 
+.search-header {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.search-header:hover {
+    color: #fff;
+}
 
 /* ##### shopping icon ###  */
 
@@ -743,7 +751,7 @@ a {
 #buddha .card-image .btn-card{
     position: absolute;
     bottom: 5%;
-    left: 35%;
+    right: 30%;
     border: 1px solid #000;
     border-radius: 4rem;
     font: 12px var(--title-text);
@@ -1170,17 +1178,33 @@ a {
     left: 2%; 
 }
 
-.owl-next i,
-.owl-prev i{
-    font-size: 6rem !important;
-    color: var(--secondary-color) !important;
-}
-
 .owl-next,
 .owl-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 2rem !important;
+    color: var(--secondary-color) !important;
+    background-color: #fff !important ;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color) !important;
+    transition: .3s;
+}
+
+.owl-next:hover,
+.owl-prev:hover {
+    color: #fff !important;
+    background-color: var(--secondary-color) !important ;
+    transition: .3s;
+}
+
+.owl-prev svg,
+.owl-next svg {
+    margin: 0 15px;
+}
+
+.svg-inline--fa {
+    vertical-align: center !important;
 }
 
 .owl-dots {
@@ -1399,7 +1423,7 @@ a {
     color: #fff;
   }
 
-  .svg-inline--fa {
+  .team .svg-inline--fa {
       vertical-align: 0;
   }
 
@@ -1537,9 +1561,6 @@ a {
 
 .blog-healthy {
     background-color: var(--grey);
-}
-
-.blog-featured {
 }
 
 .blog-featured,
