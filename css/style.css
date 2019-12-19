@@ -179,7 +179,8 @@ a {
 /* ############# HEADER #############  */
 
 .header-body{
-    background: url(../img/header-bg.jpg) left center/cover no-repeat ;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), 
+                url(../img/header-bg.jpg) left center/cover no-repeat ;
     height: 80vh;
     position: relative;
 }
@@ -938,40 +939,49 @@ a {
     background-color: var(--secondary-color);
 }
 
-/* ##### NEWS ######  */
+/* ##### home - blog ######  */
 
-#news{
+#blog{
     padding-bottom: 4rem;
 }
-#news .card-image{
+
+#blog .card {
     overflow: hidden;
 }
 
-#news .card-img-top{
+#blog .card-image{
+    overflow: hidden;
+}
+
+#blog .card-img-top{
     transform: scale(1.10);
     transition: all .5s ease-out;
 }
 
-#news .card:hover .card-img-top{
+#blog .card:hover .card-img-top{
     transform: none;
     transition: all .5s ease-out;
 }
 
-#news .card-title:hover,
-#news small:hover{
+#blog .card-title {
+    transition: .3s;
+}
+
+#blog .card-title:hover,
+#blog small:hover{
     cursor: pointer;
     color: var(--secondary-color) !important;
     transition: .3s;
 }
 
-#news .card-body .btn-news{
+#blog .card-body .btn-blog{
     border: 1px dotted #928f8f;
     color: #000;
     padding: .5rem 1rem;
     font-size: 11px;
 }
 
-#news .card-body .btn-news:hover{
+#blog .card-body .btn-blog:hover{
     background-color: var(--secondary-color);
     color: #fff;
     transition: background-color .5s ease;
@@ -1078,6 +1088,7 @@ a {
 .bread {
     font-size: 8rem;
     letter-spacing: 2px;
+    text-align: center;
     animation: coffeeAnim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -1141,8 +1152,30 @@ a {
     font-size: 2rem;
     color: var(--secondary-color);
 }
+
 .testimony-section{
     position: relative;
+}
+
+.owl-next {
+    right: 2%;
+}
+
+.owl-prev {
+    left: 2%; 
+}
+
+.owl-next i,
+.owl-prev i{
+    font-size: 6rem !important;
+    color: var(--secondary-color) !important;
+}
+
+.owl-next,
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .owl-dots {
@@ -1468,10 +1501,10 @@ a {
     font-size: .9rem !important;
 }
 
-.contact-main__last {
+/* .contact-main__last {
     display:inline-block;
     margin-left: auto;
-}
+} */
 
 .map {
     padding-top:6rem ;
@@ -1480,6 +1513,34 @@ a {
 
 .map .row {
     height: 500px;
+}
+
+/* blog - healthy  */
+.blog-featured .card{
+    margin: 1.5rem 0;
+}
+
+.blog-featured .card:hover {
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.3);
+    transition: box-shadow .5s ease;
+}
+
+.blog-healthy .card:hover {
+    transform: scale(1.03);
+    transition: .5s;
+}
+
+.blog-healthy {
+    background-color: #f6f6f6;
+}
+
+.blog-featured {
+}
+
+.blog-featured,
+.blog-healthy,
+.blog-healthy .card {
+    transition: .5s;
 }
 
 /* ########## MEDIA QUERY ########  */
@@ -1532,7 +1593,7 @@ a {
         height: 60vh;
     }
 
-    #news .fourth-card{
+    #blog .fourth-card{
         display: inline !important;
     }
 
@@ -1540,7 +1601,7 @@ a {
         display: none;
     }
 
-    .main-content{
+    /* .main-content{
         min-height:200vh;
         z-index:1;
         background-color: #fff;
@@ -1551,7 +1612,7 @@ a {
         padding: 4rem 0;
         background-color: var(--footer-bg-color);
         position: static;
-    }
+    } */
 }
 
 @media (max-width: 767.98px) { 
@@ -1639,7 +1700,7 @@ a {
         font-size: 13px;
     }
     
-    #news .fourth-card{
+    #blog .fourth-card{
         display: none !important;
     }
 
@@ -1690,6 +1751,11 @@ a {
 
     .map .row {
         height: 400px;
+    }
+
+    /* blog  */
+    .header-wrap__text h2 {
+    font-size: 1.5rem;   
     }
     
 }

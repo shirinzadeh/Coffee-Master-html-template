@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web World</title>
   <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
-  <!-- bootstrap css  -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <!-- mosaic gallery-->
   <link rel="stylesheet" href="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
   <link
     href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Varela+Round|Handlee|Kaushan+Script&display=swap"
     rel="stylesheet">
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- main css  -->
   <link rel="stylesheet" href="css/style.css">
   <!-- font awesome js  -->
@@ -88,15 +89,14 @@
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class=" dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                <a class=" dropdown-toggle nav-link" href="blog-healthy.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Bloq
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Healthy Food</a>
-                  <a class="dropdown-item" href="#">Recipes</a>
-                  <a class="dropdown-item" href="#">Cooking</a>
+                  <a class="dropdown-item" href="blog-healthy.html">Sağlam qidalar</a>
+                  <a class="dropdown-item" href="blog-recipe.html">Reseptlər</a>
                 </div>
               </div>
             </li>
@@ -336,7 +336,8 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="card-image">
-                      <img class="card-img-top d-block w-100" src="img/buddha-card-image.jpg" alt="Card image cap">
+                      <img class="card-img-top buddha-card-img d-block w-100" src="img/buddha-card-image.jpg"
+                        alt="Card image cap">
                       <button class="btn btn-card">Səbətə əlavə et</button>
                     </div>
                     <div class="card-body text-center">
@@ -351,7 +352,8 @@
                   </div>
                   <div class="carousel-item">
                     <div class="card-image">
-                      <img class="card-img-top d-block w-100" src="img/buddha-card-image-2.jpg" alt="Card image cap">
+                      <img class="card-img-top buddha-card-img d-block w-100" src="img/buddha-card-image-2.jpg"
+                        alt="Card image cap">
                       <button class="btn btn-card">Səbətə əlavə et</button>
                     </div>
                     <div class="card-body text-center">
@@ -365,7 +367,8 @@
                   </div>
                   <div class="carousel-item">
                     <div class="card-image">
-                      <img class="card-img-top d-block w-100" src="img/buddha-card-image-3.jpg" alt="Card image cap">
+                      <img class="card-img-top buddha-card-img d-block w-100" src="img/buddha-card-image-3.jpg"
+                        alt="Card image cap">
                       <button class="btn btn-card">Səbətə əlavə et</button>
                     </div>
                     <div class="card-body text-center">
@@ -977,7 +980,7 @@
     <section id="direction" class="add-ornament-top add-ornament-bottom">
       <div class="container">
         <div class="row first-row text-white">
-          <div class="col-lg-5 col-md-5 col-sm-12 pb-5">
+          <div class=" col-md-4 col-sm-12 pb-5">
             <h3 class="heading pb-4">Açılış vaxtı</h3>
             <div class="direction-opening-text d-flex justify-content-between">
               <p class="welcome-txt ">Həftə içi</p>
@@ -992,13 +995,13 @@
               <p class="welcome-txt">10:00 - 23:00</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-direction text-center pb-5">
+          <div class=" col-md-4 col-sm-6 col-direction text-center pb-5">
             <h3 class="heading ">Ünvan</h3>
             <i class="fas fa-globe-americas welcome-info-icon display-4 p-1 my-0"></i>
             <p class="welcome-txt pt-2 pb-4">Bakı, Nərimanov</p>
             <button class="btn btn-button">Xəritədə görün</button>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+          <div class=" col-md-4 col-sm-6 text-center">
             <h3 class="heading">Əlaqədə qalın</h3>
             <p class="happyhour-phone pt-4">+99451 302 00 66</p>
             <p class="welcome-txt pb-4">office@webworld.az</p>
@@ -1012,11 +1015,11 @@
       </div>
     </section>
 
-    <section id="news">
+    <section id="blog">
       <div class="container">
         <div class="row second-row">
           <div class="col-12">
-            <h4 class="heading heading-line text-center">Xəbərlər</h4>
+            <h4 class="heading heading-line text-center">Bloq</h4>
             <h6 class="welcome-info-h6 text-center font-weight-bold pt-2 pb-5">~ Bugünə Özəl ~</h6>
           </div>
         </div>
@@ -1025,22 +1028,22 @@
             <div class="card-deck mb-3">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/news-card-image.jpg" class="card-img-top" alt="News & Letters">
+                  <img src="img/blog-card-image.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
                 </div>
                 <div class="card-body">
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">recipes</button>
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">tips & tricks</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
                   <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
                     sunt aperiam numquam?...</p>
                   <small class="text-muted d-inline-block">bio,</small>
-                  <small class="text-muted d-inline-block">dinner,</small>
-                  <small class="text-muted d-inline-block">food,</small>
-                  <small class="text-muted d-inline-block">hand made,</small>
-                  <small class="text-muted d-inline-block">lamb</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
                 </div>
               </div>
             </div>
@@ -1049,22 +1052,22 @@
             <div class="card-deck mb-3">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/news-card-image-2.jpg" class="card-img-top" alt="News & Letters">
+                  <img src="img/blog-card-image-2.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
                 </div>
                 <div class="card-body">
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">healthy food</button>
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">recipes</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
                   <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
                     sunt aperiam numquam?...</p>
                   <small class="text-muted d-inline-block">bio,</small>
-                  <small class="text-muted d-inline-block">dinner,</small>
-                  <small class="text-muted d-inline-block">food,</small>
-                  <small class="text-muted d-inline-block">hand made,</small>
-                  <small class="text-muted d-inline-block">lamb</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
                 </div>
               </div>
             </div>
@@ -1073,22 +1076,22 @@
             <div class="card-deck mb-3">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/news-card-image3.jpg" class="card-img-top" alt="News & Letters">
+                  <img src="img/blog-card-image3.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
                 </div>
                 <div class="card-body">
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">cookies</button>
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">recipes</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
                   <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
                     sunt aperiam numquam?...</p>
                   <small class="text-muted d-inline-block">bio,</small>
-                  <small class="text-muted d-inline-block">dinner,</small>
-                  <small class="text-muted d-inline-block">food,</small>
-                  <small class="text-muted d-inline-block">hand made,</small>
-                  <small class="text-muted d-inline-block">lamb</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
                 </div>
               </div>
             </div>
@@ -1099,22 +1102,22 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/news-card-image.jpg" class="card-img-top" alt="News & Letters">
+                  <img src="img/blog-card-image.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
                 </div>
                 <div class="card-body">
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">recipes</button>
-                  <button class="btn btn-button btn-news d-inline-block text-uppercase mb-2">tips & tricks</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
                   <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
                     sunt aperiam numquam?...</p>
                   <small class="text-muted d-inline-block">bio,</small>
-                  <small class="text-muted d-inline-block">dinner,</small>
-                  <small class="text-muted d-inline-block">food,</small>
-                  <small class="text-muted d-inline-block">hand made,</small>
-                  <small class="text-muted d-inline-block">lamb</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
                 </div>
               </div>
             </div>
@@ -1166,12 +1169,19 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+
   <script type="text/javascript"
     src="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
   <script type="text/javascript"
     src="http://scriptpie.com/cubeportfolio/live-preview/templates/mosaic/js/main.js"></script>
   <!-- aos js -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 
