@@ -14,6 +14,7 @@ font-family: 'Kaushan Script', cursive;
     --footer-head-color: #cb9252;
     --darken: #312b30;
     --contact-primary: #F5F3F0;
+    --grey : #f6f6f6;
 }
 
 a {
@@ -335,6 +336,10 @@ a {
 .happyhour-title,
 .menu-item-price{
     font: 16px/24px var(--paragraph-text);
+}
+
+.menu-title {
+    text-transform: capitalize;
 }
 
 .menu-description{
@@ -1531,7 +1536,7 @@ a {
 }
 
 .blog-healthy {
-    background-color: #f6f6f6;
+    background-color: var(--grey);
 }
 
 .blog-featured {
@@ -1542,6 +1547,90 @@ a {
 .blog-healthy .card {
     transition: .5s;
 }
+
+/* menyu  */
+.menyu .row{
+    background-color: var(--grey);
+}
+
+.menyu-price {
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    background-color:#fff;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.menyu .menu-title{
+    border-bottom: 1px dashed #ddd;
+}
+
+.menyu-content__image {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.menyu-content__image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/06/waves-decoration.svg) repeat-x center top;
+    background-size: auto;
+    background-attachment: scroll;
+    height: 3rem;
+}
+
+.menyu-content .container {
+    background-color: var(--grey);
+    border-radius: 2rem;
+}
+
+.menyu-content .subheading {
+    color: var(--secondary-color);
+}
+
+.menyu-content__items {
+    position: relative;
+}
+
+.menyu-content__items::before,
+.menyu-content__items::after {
+    background-color: var(--grey);
+}
+
+.menyu-content__items .menu-item:hover {
+    /* box-shadow:0px 0px 30px grey; */
+    border-radius: .7rem;
+    transition: .5s;
+}
+
+.menyu-content__items .menu-item {
+    transition: .5s;
+}
+
+/* #tea .tea-image{
+    background:linear-gradient(rgb(59, 59, 59,.3),rgb(59, 59, 59,.3)),
+                url(../img/tea-bg.jpg) center/cover fixed no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+#tea .tea-image:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/06/waves-decoration.svg) repeat-x center top;
+    background-size: auto;
+    background-attachment: scroll;
+    height: 3rem;
+} */
 
 /* ########## MEDIA QUERY ########  */
 
