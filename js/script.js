@@ -1,5 +1,6 @@
 //navbar toggler
 $(document).ready(function () {
+
   //dropdown hover
   function toggleDropdown(e) {
     const _d = $(e.target).closest('.dropdown'),
@@ -164,6 +165,29 @@ $(document).ready(function () {
       }, false);
     });
   }, false);
+
+  // gallery filter 
+  $(".gallery__filter--button").click(function () {
+    var value = $(this).attr('data-filter');
+
+    if (value == "all") {
+      //$('.filter').removeClass('hidden');
+      $('.filter').show('1000');
+    }
+    else {
+      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+      $(".filter").not('.' + value).hide('1000');
+      $('.filter').filter('.' + value).show('7000');
+
+    }
+  });
+
+  if ($(".gallery__filter--button").removeClass("active")) {
+    $(this).removeClass("active");
+  }
+  $(this).addClass("active");
+
 
   $(window).stellar({
     responsive: true,

@@ -65,6 +65,17 @@ a {
     background-position: center !important;
 }
 
+.title-above {
+    animation: appear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% { opacity: 0; };
+    100% { opacity: 1; };
+}
+
 /* ########### NAVBAR ##########  */
 
 .navbar{
@@ -92,6 +103,10 @@ a {
    background: #fff;
    /* font-size: 15px; */
    transition: all .5s ease-out;
+}
+
+.navbar .nav-link:focus-within {
+    border: 1px solid var(--secondary-color);
 }
 
 .nav-line{
@@ -1634,23 +1649,56 @@ a {
     transition: .5s;
 }
 
-/* #tea .tea-image{
-    background:linear-gradient(rgb(59, 59, 59,.3),rgb(59, 59, 59,.3)),
-                url(../img/tea-bg.jpg) center/cover fixed no-repeat;
-    height: 70vh;
+/* gallery  */
+.gallery__filter--button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
     position: relative;
+    font: .8rem var(--paragraph-text) !important;
 }
 
-#tea .tea-image:before{
-    content: "";
+.gallery__filter--button:hover {
+    color: var(--secondary-color);
+    transition: .5s;
+}
+
+.gallery__filter--button:hover.gallery__filter--button::after {
+    content: '';
+    height: 1px;
+    width: 50%;
+    background-color: var(--secondary-color);
     position: absolute;
-    left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery-product {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+/* .gallery-image {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.gallery-product:hover .gallery-image {
+    transform: none;
+    transition: .5s;
+}
+
+.gallery-image::after {
+    content: 'jgjh';
+    position: absolute;
     top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/06/waves-decoration.svg) repeat-x center top;
-    background-size: auto;
-    background-attachment: scroll;
-    height: 3rem;
+    border: 5px solid red;
+    background-color: rgba(255,255,255,0.88);
+    
 } */
 
 /* ########## MEDIA QUERY ########  */
