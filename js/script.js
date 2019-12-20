@@ -177,9 +177,8 @@ $(document).ready(function () {
     else {
       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-      $(".filter").not('.' + value).hide('1000');
-      $('.filter').filter('.' + value).show('7000');
-
+      $(".filter").not('.' + value).slideUp('3000').hide('3000');
+      $('.filter').filter('.' + value).slideDown('3000').show('3000');
     }
   });
 

@@ -1595,7 +1595,7 @@ a {
     bottom: 50%;
     left: 10%;
     background-color:#fff;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 50%;
 }
 
@@ -1674,9 +1674,13 @@ a {
 }
 
 .gallery-product {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     overflow: hidden;
     /* position: relative; */
+}
+
+.gallery-image {
+    height: 100%;
 }
 
 /* .gallery-image {
