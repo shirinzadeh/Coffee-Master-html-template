@@ -60,14 +60,21 @@
             <li class="nav-item ">
               <a href="index.html" class="nav-link text-capitalize">əsas səhifə</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
-            </li>
             <li class="nav-item ">
               <a href="menu.html" class="nav-link text-capitalize">menyu</a>
             </li>
             <li class="nav-item">
-              <a href="gallery.html" class="nav-link text-capitalize">qalereya</a>
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="gallery-coffee.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qalereya
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="gallery-coffee.html">Kofe Şop</a>
+                  <a class="dropdown-item" href="gallery-food.html">Qida</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -81,6 +88,9 @@
                   <a class="dropdown-item" href="blog-recipe.html">Reseptlər</a>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
             </li>
             <!-- <li class="nav-item">
               <a href="#contact" class="nav-link text-capitalize">Shop</a>
@@ -104,7 +114,7 @@
                   <p class="banner-heading-top">Coffee</p><br>
                   <p class="banner-heading-bottom">Shop</p>
                 </h1>
-                <p class="banner-paragraph pt-4 text-white">- 1987-ci ildən bəri -</p>
+                <p class="banner-paragraph pt-4 text-white">- 2015-ci ildən bəri -</p>
               </div>
             </div>
           </div>
@@ -117,7 +127,7 @@
       <section id="welcome">
         <div class="row font-weight-bold d-flex">
           <div class="col-lg-4 col-md-6 col-sm-6 first-column order-lg-1 order-md-2 order-sm-2 order-2">
-            <img src="img/welcome-img1.jpg" class="welcome-img1" alt="">
+            <img src="img/welcome-img1.png" class="welcome-img1 mx-auto d-block w-100" alt="">
             <div class="column-content first-column-content">
               <h4 class="heading">Öncəliyimiz</h4>
               <p class="welcome-txt p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates excepturi
@@ -136,7 +146,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 last-column order-lg-3 order-md-3 order-sm-3 order-3">
-            <img src="img/welcome-img2.jpg" class="welcome-img2" alt="">
+            <img src="img/welcome-img2.jpg" class="welcome-img2 w-50 mx-auto d-block " alt="">
             <div class="column-content">
               <h4 class="heading">Ərzaqlar</h4>
               <p class="welcome-txt p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis
@@ -150,8 +160,8 @@
     <section id="welcome-info">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <img src="img/coffee-photo-1.jpg" class="brunch-img w-100 h-100" alt="">
+          <div class="col-lg-2 col-md-6 col-sm-6 p-0">
+            <img src="img/wlcm2.jpg" class="brunch-img w-100 h-100" alt="">
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 menu-item">
             <div class="menu-item-content">
@@ -181,17 +191,17 @@
           <div class="col-lg-4 col-md-6 col-sm-6 ">
             <div class=" text-center happyhour">
               <i class="fas fa-coffee welcome-info-icon display-4 "></i>
-              <h4 class="heading ">Happy Hour</h4>
-              <h6 class="welcome-info-h6 font-weight-bold pt-2">~ Starts at 3pm ~</h6>
+              <h4 class="heading ">Piano gecəsi</h4>
+              <h6 class="welcome-info-h6 font-weight-bold pt-2">~ Hər cümə axşamı ~</h6>
               <p class="happyhour-title text-left pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 possimus eos culpa, modi similique placeat nobis ab minima, beatae inventore enim iste, dolores nihil
                 nemo magnam. Saepe accusantium cumque quis?</p>
               <p class="happyhour-phone py-4">+99451 302 00 66</p>
-              <button class="btn btn-button btn-bfr btn-anim mb-4">Book a table</button>
+              <a href="contact.html"><button class="btn btn-button btn-bfr btn-anim mb-4">Əlaqə</button></a>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <img src="img/coffee-photo-2.jpg" class="happyhour-img w-100 h-100" alt="">
+          <div class="col-lg-2 col-md-6 col-sm-6 p-0">
+            <img src="img/piano.jpg" class="happyhour-img w-100 h-100" alt="">
           </div>
         </div>
       </div>
@@ -209,11 +219,11 @@
               <span class="modal-menu-price">$22</span>
             </div>
             <button type="button" class=" close-button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <i class="fas fa-times" aria-hidden="true"></i>
             </button>
           </div>
           <div class="modal-body">
-            <h1 class="modal-body-category text-uppercase d-inline-block">brunch</h1>
+            <h1 class="modal-body-category text-uppercase d-inline-block">branç</h1>
             <h6 class="modal-body-category text-uppercase d-inline-block">Bugünə Özəl</h6>
             <p class="modal-category-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Nemo repellat debitis ipsam nostrum, magni et?</p>
@@ -221,30 +231,30 @@
             <p class="text-muted">450g</p>
             <hr>
             <i class="fas fa-pepper-hot d-inline-block text-muted"></i>
-            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">spicy level</h1>
+            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">acılıq dərəcəsi</h1>
             <div class="spicy-level mb-3">
               <div class="level text-center">2/5</div>
             </div>
             <i class="fas fa-utensils d-inline-block text-muted"></i>
-            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">nutritions</h1>
+            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">qidalanma</h1>
             <div class="row">
               <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
+                <p class="text-muted nutritions-text">Kalori 250kcl <br>
                   Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
+                  Karbohidrat 4.5G <br>
                   Protein 1.7G
                 </p>
               </div>
               <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
+                <p class="text-muted nutritions-text">Kalori 250kcl <br>
                   Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
+                  Karbohidrat 4.5G <br>
                 </p>
               </div>
             </div>
             <hr>
             <i class="fas fa-book d-inline-block text-muted"></i>
-            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">ingredients</h1>
+            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">içindəkilər</h1>
             <p class="modal-category-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi sequi
               accusamus, laboriosam ullam autem dolores ratione nemo saepe hic?</p>
           </div>
@@ -264,26 +274,26 @@
               est vel ipsa! Maiores!</p>
           </div>
           <div class="col-sm col-lg col-sm-6">
-            <img src="img/offer2.jpg" class="offer-image" alt="We offer">
-            <h3 class="heading py-3">Espresso </h3>
+            <img src="img/menyu-breakfast-c.jpg" class="offer-image" alt="We offer">
+            <h3 class="heading py-3">Sendviç </h3>
             <p class=" welcome-txt  text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi
               est vel ipsa! Maiores!</p>
           </div>
           <div class="col-sm col-lg col-sm-6">
             <img src="img/offer3.jpg" class="offer-image" alt="We offer">
-            <h3 class="heading py-3">Amerikano</h3>
+            <h3 class="heading py-3">Sup</h3>
             <p class=" welcome-txt text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi
               est vel ipsa! Maiores!</p>
           </div>
           <div class="col-sm col-lg col-sm-6">
-            <img src="img/offer4.jpg" class="offer-image" alt="We offer">
-            <h3 class="heading py-3">Latte</h3>
+            <img src="img/gallery-food-7-c.jpg" class="offer-image" alt="We offer">
+            <h3 class="heading py-3">Şirniyyat</h3>
             <p class=" welcome-txt text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi
               est vel ipsa! Maiores!</p>
           </div>
           <div class="col-sm col-lg col-sm-6 d-sm-none d-lg-block">
-            <img src="img/offer5.jpg" class="offer-image " alt="We offer">
-            <h3 class="heading py-3">Kapuçino</h3>
+            <img src="img/icecoffee-1-c.jpg" class="offer-image " alt="We offer">
+            <h3 class="heading py-3">Ice-coffee</h3>
             <p class=" welcome-txt text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi
               est vel ipsa! Maiores!</p>
           </div>
@@ -304,14 +314,14 @@
           <div class="col-lg-3 col-md-3 col-sm-3 d-flex align-items-center buddha-img">
             <img src="img/buddha-left.jpg " class="w-100" alt="Buddha">
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-5">
+          <div class="col-lg-5 col-md-6 col-sm-6">
             <i class="fas fa-mug-hot welcome-info-icon display-4 d-inline-block"></i>
             <h1 class="heading d-inline-block pl-3">Beta:<br>Hazırlanma qaydası</h1>
             <p class="welcome-txt pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque commodi
               placeat vero aspernatur nam exercitationem natus, reprehenderit maiores pariatur voluptatibus harum
               ratione asperiores totam quasi quia rem tempora maxime. Aut!</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 align-self-center">
+          <div class="col-lg-4 col-md-6 col-sm-6 align-self-center">
             <div class="card ">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -374,34 +384,36 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <img src="img/buddha-bottom.jpg" class="buddha-bottom-image" alt="">
-          </div>
-        </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-12 d-flex justify-content-center"> -->
+        <img src="img/buddha-bottom.jpg" class="buddha-bottom-image w-100 d-block" alt="">
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
     <section id="work">
       <div class="container">
+        <h1 class="heading heading-line text-center">Qalereya</h1>
+        <h6 class="welcome-info-h6 text-center pt-2 pb-5">~ Bugünə Özəl ~</h6>
         <div class="row d-block">
-          <div class="cbp-l-filters-alignCenter">
+          <!-- <div class="cbp-l-filters-alignCenter">
             <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-filter-style text-uppercase">All
               <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".coffee-shop" class="cbp-filter-item cbp-filter-style text-uppercase">coffee shop
+            <div data-filter="coffee-shop" class="cbp-filter-item cbp-filter-style text-uppercase">coffee shop
               <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".gourmet" class=" cbp-filter-item cbp-filter-style text-uppercase">gourmet
+            <div data-filter="gourmet" class=" cbp-filter-item cbp-filter-style text-uppercase">gourmet
               <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".recipes" class=" cbp-filter-item cbp-filter-style text-uppercase">recipes
+            <div data-filter="recipes" class=" cbp-filter-item cbp-filter-style text-uppercase">recipes
               <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".accesories" class=" cbp-filter-item cbp-filter-style text-uppercase">accesories
+            <div data-filter="accesories" class=" cbp-filter-item cbp-filter-style text-uppercase">accesories
               <div class="cbp-filter-counter"></div>
             </div>
-          </div>
+          </div> -->
 
           <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-flat no-transition">
             <!-- <div class="cbp-item gourmet accesories"> -->
@@ -528,7 +540,7 @@
         <h6 class="welcome-info-h6 text-center font-weight-bold pt-2">~ Bugünə Özəl ~</h6>
         <div class="row">
           <div class="col-lg-4 menu-item mt-5">
-            <h3 class="heading"><u>Səhər yeməyi</u></h3>
+            <h3 class="heading"><u>Kofe</u></h3>
             <div class="menu-item-content">
               <div class="menu-name pt-2 d-flex justify-content-between align-items-center" data-toggle="modal"
                 data-target="#modalbox">
@@ -597,7 +609,7 @@
             </div>
           </div>
           <div class="col-lg-4 menu-item mt-5">
-            <h3 class="heading"><u>Şam yeməyi</u></h3>
+            <h3 class="heading"><u>Keks</u></h3>
             <div class="menu-item-content">
               <div class="menu-name pt-2 d-flex justify-content-between align-items-center" data-toggle="modal"
                 data-target="#modalbox">
@@ -843,7 +855,7 @@
                 </div>
                 <p class="menu-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
-                <h3 class="heading pt-5"><u>Nahar</u></h3>
+                <h3 class="heading pt-5"><u>Dondurma</u></h3>
                 <div class="menu-item-content">
                   <div class="menu-name pt-2 d-flex justify-content-between align-items-center" data-toggle="modal"
                     data-target="#modalbox">
@@ -961,7 +973,7 @@
     <section id="direction" class="add-ornament-top add-ornament-bottom">
       <div class="container">
         <div class="row first-row text-white">
-          <div class=" col-md-4 col-sm-12 pb-5">
+          <div class=" col-md-4 col-sm-12 pb-5 text-center">
             <h3 class="heading pb-4">Açılış vaxtı</h3>
             <div class="direction-opening-text d-flex justify-content-between">
               <p class="welcome-txt ">Həftə içi</p>

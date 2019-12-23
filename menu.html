@@ -41,7 +41,10 @@
           title="Web World">Web World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
-        <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
+        <div class="order-lg-3 pr-3 pr-sm-5 ">
+          <button class="btn search-header"> <i class="fas fa-search"></i> </button>
+        </div>
+        <!-- <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
           <div class="cart-dropdown-inner">
             <a href="">
               <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
@@ -51,30 +54,26 @@
           <div class="cart-dropdown-out">
             <p class="cart-text text-center">No products in the card </p>
           </div>
-        </div>
+        </div> -->
         <!-- links -->
         <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="myNavbar">
           <ul class="navbar-nav">
             <li class="nav-item ">
               <a href="index.html" class="nav-link text-capitalize">əsas səhifə</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
-            </li>
             <li class="nav-item ">
               <a href="menu.html" class="nav-link text-capitalize">menyu</a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class=" dropdown-toggle nav-link" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Şəkillər
+                <a class=" dropdown-toggle nav-link" href="gallery-coffee.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qalereya
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Restaurant</a>
-                  <a class="dropdown-item" href="#">Coffee Shop</a>
-                  <a class="dropdown-item" href="#">Sushi Bar</a>
+                  <a class="dropdown-item" href="gallery-coffee.html">Kofe Şop</a>
+                  <a class="dropdown-item" href="gallery-food.html">Qida</a>
                 </div>
               </div>
             </li>
@@ -90,6 +89,9 @@
                   <a class="dropdown-item" href="blog-recipe.html">Reseptlər</a>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link text-capitalize">əlaqə</a>
@@ -116,7 +118,7 @@
     <section class="menyu py-5 pt-sm-1">
       <div class="container">
         <img src="img/title-above.png" class="title-above d-block mx-auto pt-3 pt-sm-1" alt="Title-above">
-        <h3 class="subheading heading-line text-center pt-4">lorem</h3>
+        <h3 class="subheading heading-line text-center pt-4">Günə Özəl</h3>
         <div class="row py-4">
           <div class="col-md-6 col-lg-3 pb-4 pb-lg-0">
             <img src="img/menu-img.jpg" class="d-block w-100" alt="menu-image">
@@ -154,13 +156,13 @@
       </div>
     </section>
 
-    <section class="menyu-content py-5">
+    <section class="menyu-content pb-5">
       <div class="menyu-content__image d-flex align-items-center justify-content-center"
         style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/menyu-drinks.jpg') center center/cover fixed no-repeat;">
         <h1 class="heading text-white">İçkilər</h1>
       </div>
       <div class="container ">
-        <div class="menyu-content__items add-ornament-top add-ornament-bottom">
+        <div class="menyu-content__items add-ornament-top add-ornament-bottom mt-5">
           <div class="row py-4">
             <div class="col-lg-4 menu-item">
               <h5 class="subheading "><u>Kofelər</u></h5>
@@ -266,11 +268,11 @@
               <span class="modal-menu-price">$22</span>
             </div>
             <button type="button" class=" close-button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <i class="fas fa-times" aria-hidden="true"></i>
             </button>
           </div>
           <div class="modal-body">
-            <h1 class="modal-body-category text-uppercase d-inline-block">brunch</h1>
+            <h1 class="modal-body-category text-uppercase d-inline-block">branç</h1>
             <h6 class="modal-body-category text-uppercase d-inline-block">Bugünə Özəl</h6>
             <p class="modal-category-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Nemo repellat debitis ipsam nostrum, magni et?</p>
@@ -278,30 +280,30 @@
             <p class="text-muted">450g</p>
             <hr>
             <i class="fas fa-pepper-hot d-inline-block text-muted"></i>
-            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">spicy level</h1>
+            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">acılıq dərəcəsi</h1>
             <div class="spicy-level mb-3">
               <div class="level text-center">2/5</div>
             </div>
             <i class="fas fa-utensils d-inline-block text-muted"></i>
-            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">nutritions</h1>
+            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">qidalanma</h1>
             <div class="row">
               <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
+                <p class="text-muted nutritions-text">Kalori 250kcl <br>
                   Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
+                  Karbohidrat 4.5G <br>
                   Protein 1.7G
                 </p>
               </div>
               <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
+                <p class="text-muted nutritions-text">Kalori 250kcl <br>
                   Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
+                  Karbohidrat 4.5G <br>
                 </p>
               </div>
             </div>
             <hr>
             <i class="fas fa-book d-inline-block text-muted"></i>
-            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">ingredients</h1>
+            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">içindəkilər</h1>
             <p class="modal-category-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi sequi
               accusamus, laboriosam ullam autem dolores ratione nemo saepe hic?</p>
           </div>
@@ -309,13 +311,13 @@
       </div>
     </div>
 
-    <section class="menyu-content py-5">
+    <section class="menyu-content pb-5">
       <div class="menyu-content__image d-flex align-items-center justify-content-center"
         style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/menyu-dessert.jpg') center center/cover fixed no-repeat;">
         <h1 class="heading text-white">Şirniyyatlar</h1>
       </div>
       <div class="container ">
-        <div class="menyu-content__items add-ornament-top add-ornament-bottom">
+        <div class="menyu-content__items add-ornament-top add-ornament-bottom mt-5">
           <div class="row py-4">
             <div class="col-lg-4 menu-item">
               <h5 class="subheading "><u>Keks</u></h5>
@@ -421,68 +423,13 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade modalbox" id="modalbox" tabindex="-1" role="dialog" aria-labelledby="modalboxTitle"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <img class="popup-image" src="img/modal-popup-img.jpg" alt="popup-image">
-            <div class="popup-image-text modal-title" id="modalboxTitle">
-              <h3 class="modal-header-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-              <span class="modal-menu-price">$22</span>
-            </div>
-            <button type="button" class=" close-button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h1 class="modal-body-category text-uppercase d-inline-block">brunch</h1>
-            <h6 class="modal-body-category text-uppercase d-inline-block">Bugünə Özəl</h6>
-            <p class="modal-category-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nemo repellat debitis ipsam nostrum, magni et?</p>
-            <hr>
-            <p class="text-muted">450g</p>
-            <hr>
-            <i class="fas fa-pepper-hot d-inline-block text-muted"></i>
-            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">spicy level</h1>
-            <div class="spicy-level mb-3">
-              <div class="level text-center">2/5</div>
-            </div>
-            <i class="fas fa-utensils d-inline-block text-muted"></i>
-            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">nutritions</h1>
-            <div class="row">
-              <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
-                  Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
-                  Protein 1.7G
-                </p>
-              </div>
-              <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
-                  Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
-                </p>
-              </div>
-            </div>
-            <hr>
-            <i class="fas fa-book d-inline-block text-muted"></i>
-            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">ingredients</h1>
-            <p class="modal-category-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi sequi
-              accusamus, laboriosam ullam autem dolores ratione nemo saepe hic?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="menyu-content py-5">
+    <section class="menyu-content pb-5">
       <div class="menyu-content__image d-flex align-items-center justify-content-center"
         style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/menyu-breakfast.jpg') center center/cover fixed no-repeat;">
         <h1 class="heading text-white">Branç</h1>
       </div>
       <div class="container ">
-        <div class="menyu-content__items add-ornament-top add-ornament-bottom">
+        <div class="menyu-content__items add-ornament-top add-ornament-bottom mt-5">
           <div class="row py-4">
             <div class="col-lg-4 menu-item">
               <h5 class="subheading "><u>Sendviç</u></h5>
@@ -557,61 +504,6 @@
           </div>
         </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal fade modalbox" id="modalbox" tabindex="-1" role="dialog" aria-labelledby="modalboxTitle"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <img class="popup-image" src="img/modal-popup-img.jpg" alt="popup-image">
-            <div class="popup-image-text modal-title" id="modalboxTitle">
-              <h3 class="modal-header-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-              <span class="modal-menu-price">$22</span>
-            </div>
-            <button type="button" class=" close-button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h1 class="modal-body-category text-uppercase d-inline-block">brunch</h1>
-            <h6 class="modal-body-category text-uppercase d-inline-block">Bugünə Özəl</h6>
-            <p class="modal-category-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nemo repellat debitis ipsam nostrum, magni et?</p>
-            <hr>
-            <p class="text-muted">450g</p>
-            <hr>
-            <i class="fas fa-pepper-hot d-inline-block text-muted"></i>
-            <h1 class="modal-spicy text-uppercase d-inline-block font-weight-bold">spicy level</h1>
-            <div class="spicy-level mb-3">
-              <div class="level text-center">2/5</div>
-            </div>
-            <i class="fas fa-utensils d-inline-block text-muted"></i>
-            <h1 class="modal-nutritions text-uppercase d-inline-block font-weight-bold">nutritions</h1>
-            <div class="row">
-              <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
-                  Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
-                  Protein 1.7G
-                </p>
-              </div>
-              <div class="col">
-                <p class="text-muted nutritions-text">Calories 250kcl <br>
-                  Fiber 2.0G <br>
-                  Carbohydrates 4.5G <br>
-                </p>
-              </div>
-            </div>
-            <hr>
-            <i class="fas fa-book d-inline-block text-muted"></i>
-            <h1 class="modal-ingredients text-uppercase d-inline-block font-weight-bold">ingredients</h1>
-            <p class="modal-category-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi sequi
-              accusamus, laboriosam ullam autem dolores ratione nemo saepe hic?</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer id="footer">
       <h1 class="heading footer-heading text-center pb-4">Web World</h1>

@@ -73,6 +73,7 @@ $(document).ready(function () {
     stagePadding: 0,
     nav: true,
     dots: false,
+    loop: true,
     navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
     responsive: {
       0: {
@@ -177,8 +178,8 @@ $(document).ready(function () {
     else {
       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-      $(".filter").not('.' + value).slideUp('3000').hide('3000');
-      $('.filter').filter('.' + value).slideDown('3000').show('3000');
+      $(".filter").not('.' + value).slideUp().hide();
+      $('.filter').filter('.' + value).slideDown().show();
     }
   });
 

@@ -41,7 +41,10 @@
           title="Web World">Web World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
-        <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
+        <div class="order-lg-3 pr-3 pr-sm-5 ">
+          <button class="btn search-header"> <i class="fas fa-search"></i> </button>
+        </div>
+        <!-- <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
           <div class="cart-dropdown-inner">
             <a href="">
               <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
@@ -51,21 +54,28 @@
           <div class="cart-dropdown-out">
             <p class="cart-text text-center">No products in the card </p>
           </div>
-        </div>
+        </div> -->
         <!-- links -->
         <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="myNavbar">
           <ul class="navbar-nav">
             <li class="nav-item ">
               <a href="index.html" class="nav-link text-capitalize">əsas səhifə</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
-            </li>
             <li class="nav-item ">
               <a href="menu.html" class="nav-link text-capitalize">menyu</a>
             </li>
             <li class="nav-item">
-              <a href="gallery.html" class="nav-link text-capitalize">qalereya</a>
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="gallery-coffee.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qalereya
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="gallery-coffee.html">Kofe Şop</a>
+                  <a class="dropdown-item" href="gallery-food.html">Qida</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -83,6 +93,9 @@
             <!-- <li class="nav-item">
               <a href="#contact" class="nav-link text-capitalize">Shop</a>
             </li> -->
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
+            </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link text-capitalize">əlaqə</a>
             </li>
@@ -110,24 +123,23 @@
         <img src="img/title-above.png" class="title-above d-block mx-auto pt-3 pt-sm-1" alt="Title-above">
         <h3 class="subheading heading-line text-center pt-4">Hekayəmiz</h3>
         <div class="row py-4">
-          <div class="col-md-6 story__left d-flex flex-column align-items-center justify-content-center mb-2">
+          <div class="col-md-6 story__left d-flex flex-column align-items-center justify-content-center">
             <div class="subheading-text text-center py-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cum molestiae blanditiis, ipsam dignissimos
               alias doloremque quos perferendis praesentium autem quod. Ab maiores blanditiis corrupti itaque ipsa
-              impedit. Et alias ex aut cupiditate aliquid, a officia laborum autem possimus, libero sint qui eius
-              similique deleniti? Nulla consequuntur amet animi eligendi. <br><br> Lorem ipsum dolor sit amet,
+              impedit. Et alias ex aut cupiditate aliquid <br><br> Lorem ipsum dolor sit amet,
               consectetur
               adipisicing elit. Minus vero, saepe minima nisi praesentium explicabo eius quo hic vel eos et harum
               molestias, ducimus cum voluptatum labore? Harum, asperiores qui?
             </div>
-            <div class="social pb-3">
-              <a href="https://www.facebook.com/webworld.az/"><i class="fab fa-facebook-f mx-2"></i></a>
-              <a href="https://www.instagram.com/webworld.az/"><i class="fab fa-instagram mx-2"></i></a>
+            <div class="social py-3">
+              <a href="https://www.facebook.com/webworld.az/"><i class="fab fa-facebook-f "></i></a>
+              <a href="https://www.instagram.com/webworld.az/"><i class="fab fa-instagram "></i></a>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 pt-4 pt-md-0">
             <div id="home" class="video-hero"
-              style="height: 400px; background-image: url(img/header-bg.jpg); background-size:cover; background-position: center center;">
+              style="height:100%; background-image: url(img/header-bg.jpg); background-size:cover; background-position: center center;">
               <a class="player"
                 data-property="{videoURL:'https://www.youtube.com/watch?v=G1Bl_cy0svM',containment:'#home',useOnMobile: true, autoPlay:true, loop:true, mute:true, realfullscreen: true, startAt:0,  opacity:1, quality:'default', stopMovieOnBlur:true}"></a>
             </div>

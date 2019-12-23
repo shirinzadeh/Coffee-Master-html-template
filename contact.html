@@ -41,7 +41,10 @@
           title="Web World">Web World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
-        <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
+        <div class="order-lg-3 pr-3 pr-sm-5 ">
+          <button class="btn search-header"> <i class="fas fa-search"></i> </button>
+        </div>
+        <!-- <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
           <div class="cart-dropdown-inner">
             <a href="">
               <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
@@ -51,21 +54,27 @@
           <div class="cart-dropdown-out">
             <p class="cart-text text-center">No products in the card </p>
           </div>
-        </div>
+        </div> -->
         <!-- links -->
         <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="myNavbar">
           <ul class="navbar-nav">
             <li class="nav-item ">
               <a href="index.html" class="nav-link text-capitalize">əsas səhifə</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
-            </li>
             <li class="nav-item ">
               <a href="menu.html" class="nav-link text-capitalize">menyu</a>
             </li>
             <li class="nav-item">
-              <a href="gallery.html" class="nav-link text-capitalize">qalereya</a>
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="gallery-coffee.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qalereya
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="gallery-coffee.html">Kofe Şop</a>
+                  <a class="dropdown-item" href="gallery-food.html">Qida</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -73,7 +82,6 @@
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Bloq
                 </a>
-
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="blog-healthy.html">Sağlam qidalar</a>
                   <a class="dropdown-item" href="blog-recipe.html">Reseptlər</a>
@@ -83,6 +91,9 @@
             <!-- <li class="nav-item">
               <a href="#contact" class="nav-link text-capitalize">Shop</a>
             </li> -->
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
+            </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link text-capitalize">əlaqə</a>
             </li>
@@ -174,13 +185,9 @@
     </section>
 
     <section class="map">
-      <div class="row pb-5">
-        <div class="col-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.271588995667!2d49.86849091524855!3d40.40283386440864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ee9253a65%3A0x29160f1a81905e71!2sNariman%20Narimanov!5e0!3m2!1sen!2s!4v1574691645795!5m2!1sen!2s"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.271588995667!2d49.86849091524855!3d40.40283386440864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ee9253a65%3A0x29160f1a81905e71!2sNariman%20Narimanov!5e0!3m2!1sen!2s!4v1574691645795!5m2!1sen!2s"
+        width="100%" height="500vh" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
 
 

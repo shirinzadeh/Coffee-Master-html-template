@@ -10,10 +10,10 @@ font-family: 'Kaushan Script', cursive;
     --line-height : 24px;
     --text-size : 16px;
     --secondary-color: #cb7152;
-    --footer-bg-color: #23282f;
+    --dark: #23282f;
     --footer-head-color: #cb9252;
     --darken: #312b30;
-    --contact-primary: #F5F3F0;
+    --brown-light: #F5F3F0;
     --grey : #f6f6f6;
 }
 
@@ -29,7 +29,7 @@ a {
 
 .add-ornament-top::before {
     display: block;
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     height: 26px;
     content: '';
     -webkit-mask-image: url(https://vip-restaurant.vamtam.com/wp-content/themes/vip-restaurant/vamtam/assets/images/ornament-top.svg);
@@ -49,7 +49,7 @@ a {
 
 .add-ornament-bottom::after {
     display: block;
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     height: 26px;
     content: '';
     -webkit-mask-image: url(https://vip-restaurant.vamtam.com/wp-content/themes/vip-restaurant/vamtam/assets/images/ornament-bottom.svg);
@@ -69,6 +69,11 @@ a {
     animation: appear;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+}
+
+.img-450 {
+    height: 285px !important;
+    width: 285px !important;
 }
 
 @keyframes appear {
@@ -212,7 +217,7 @@ a {
 #header .banner-heading{
     padding-top: 8rem;
     font: 9rem var(--banner-text);
-    line-height: 3.1rem;
+    line-height: 3.6rem;
     transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     text-shadow: 3px 3px 8px var(--secondary-color);
     transform-origin: 50% 50% 0px;
@@ -312,6 +317,7 @@ a {
 .first-column{
     position: relative;
 }
+
 .first-column-content{
     position: absolute;
     bottom: 5rem;
@@ -321,6 +327,7 @@ a {
 
 .welcome-img1 {
     z-index: -1;
+    filter: drop-shadow(0px 40px 30px grey);
 }
 
 #welcome-info{
@@ -344,7 +351,7 @@ a {
 
 .welcome-info-h6{
     font: 14px 'Handlee', cursive;
-    letter-spacing: .4rem;
+    letter-spacing: .3rem;
     margin: 0;
 }
 
@@ -508,7 +515,7 @@ a {
     position: absolute;
     top: -10px;
     right: -10px;
-    font-size: 30px;
+    font-size: 1.7rem;
     border: 1px solid #cb7152;
     border-radius: 50%;
     background: #fff;
@@ -914,7 +921,7 @@ a {
 #direction{
     margin: 4rem 0;
     padding: 4rem 0;
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     position: relative;
 }
 
@@ -940,7 +947,7 @@ a {
 }
 
  .direction-social-icons a{
-    color: var(--footer-bg-color);
+    color: var(--dark);
 }
 
 .direction-social-icons .fa-facebook-f,
@@ -953,7 +960,7 @@ a {
 .direction-social-icons .fa-facebook-f:hover,
 .direction-social-icons .fa-twitter:hover,
  .direction-social-icons .fa-instagram:hover{
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     color: #fff;
     width: 2rem;
     height: 2rem;
@@ -1026,7 +1033,7 @@ a {
 
 #footer{
     padding: 4rem 0;
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     position:fixed;
     bottom:0;
     left:0;
@@ -1059,7 +1066,7 @@ a {
 #footer .footer-email{
     border: 1px solid #d8d8d8;
     border-radius: 5rem;
-    background-color: var(--footer-bg-color);
+    background-color: var(--dark);
     padding: 1.5rem;
 }
 
@@ -1131,19 +1138,26 @@ a {
 	position: relative;
 	background-repeat: no-repeat;
 	z-index: 0;
-    height: 400px;
     box-shadow: 0 0 10px 1px;
+    height: 100%;
 }
 
 .story .social a{
     border: 1px solid var(--darken);
     font-size: 1.1rem;  
     transition: .3s;
+    padding: 3px 6px;
+    border-radius: 2px;
 }
 
 .story .social a:hover {
     color: var(--secondary-color);
     border-color: var(--secondary-color);
+}
+
+.svg-inline--fa.fa-w-9,
+.svg-inline--fa.fa-w-14 {
+    width: 1em;
 }
 
 .story__left {
@@ -1183,6 +1197,12 @@ a {
 
 .testimony-section{
     position: relative;
+}
+
+/* // enable scroll owl carousel on mobile */
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
 }
 
 .owl-next {
@@ -1501,7 +1521,7 @@ a {
 /* CONTACT  */
 
 .contact-main {
-    background-color: var(--contact-primary);
+    background-color: var(--brown-light);
     position: relative;
 }
 
@@ -1708,6 +1728,11 @@ a {
 /* ########## MEDIA QUERY ########  */
 
 @media (max-width: 991.98px) {
+    .heading {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
     .navbar-brand {
         margin-right: 0;
     }
@@ -1738,9 +1763,14 @@ a {
         height: 37rem !important;
     }
 
-    #buddha .heading{
-        font-size: 40px;
+    #welcome-info .heading {
+        font-size: 2.5rem !important ;
+        line-height: 2rem;
     }
+
+    /* #buddha .heading{
+        font-size: 40px;
+    } */
 
     #buddha .buddha-img{
         display: none !important;
@@ -1772,7 +1802,7 @@ a {
     
     #footer{
         padding: 4rem 0;
-        background-color: var(--footer-bg-color);
+        background-color: var(--dark);
         position: static;
     } */
 }
@@ -1781,9 +1811,7 @@ a {
     .btn-button {
         padding: .5rem 1.5rem;
     }
-    .header-body{
-        background: url(../img/header-bg.jpg) center center/cover no-repeat ;
-    }
+
     #header .banner-heading{
         /* padding-top: 12rem; */
         font: 7rem var(--banner-text);
@@ -1799,16 +1827,35 @@ a {
         /* width: 25%; */
     }
 
-    .heading{
-        font-size: 40px;
-    }
-
-    #welcome .welcome-img1, #welcome .welcome-img2{
-        width: 70%;
+    .heading {
+        font-size: 2rem;
+        line-height: 2rem;
     }
 
     .welcome-txt{
         font: 15px var(--paragraph-text); 
+    }
+
+    #welcome .first-column,
+    #welcome .last-column{
+        padding: 4rem 0;
+    }
+
+    #welcome-info .heading {
+        font-size: 2rem ;
+        line-height: 1rem;
+    }
+
+    .welcome-info-icon{
+        font-size: 3rem;
+    }
+
+    .first-column-content{
+        position: static;
+    }
+
+    .welcome-img1 {
+        width: 70% !important;
     }
 
     .happyhour-title, .menu-title{
@@ -1842,11 +1889,8 @@ a {
         line-height: 3rem;
     }
 
-    #buddha .buddha-bottom-image{
-        width: 100% ;
-    }
-    .welcome-info-icon{
-        font-size: 3rem;
+    #buddha .card-image .btn-card {
+        right: 25%;
     }
 
     #menu .menu-item .heading,
@@ -1865,6 +1909,8 @@ a {
     #blog .fourth-card{
         display: none !important;
     }
+
+    #work {display: none;}
 
     #work .cbp-l-filters-alignCenter .cbp-filter-item {
         font-size: 12px;
@@ -1891,6 +1937,11 @@ a {
 
     .bread {
         font-size: 4rem !important;
+    }
+
+    .video-hero{
+        background-size: cover !important;
+        height: 400px !important;
     }
 
     /* contact  */
@@ -1955,7 +2006,7 @@ a {
     #header .banner-heading {
         padding-top: 12rem;
         font: 5rem var(--banner-text);
-        line-height: 1.3rem;
+        line-height: 1.8rem;
         transform-origin: bottom;
     }
 
@@ -1968,8 +2019,16 @@ a {
         margin-top: 0;
     }
 
+    .first-column-content{
+        position: static;
+    }
+
     .offer-image {
         width: 45% !important;
+    }
+
+    #buddha .card-image .btn-card {
+        right: 38%;
     }
 
     #work {
