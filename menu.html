@@ -28,7 +28,7 @@
   <div class="main-content">
     <div class="header-body hero-wrap" style="background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), 
                                                         url('img/bg-menu.jpg') bottom center/cover no-repeat;">
-      <nav class="navbar navbar-expand-lg d-flex ">
+      <nav class="navbar navbar-expand-lg d-flex">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
           <div class="toggler-btn">
             <div class="bar bar1"></div>
@@ -37,7 +37,7 @@
           </div>
         </button>
 
-        <a href="#" class="navbar-brand order-lg-1 pl-lg-5" data-toggle="tooltip" data-placement="bottom"
+        <a href="index.html" class="navbar-brand order-lg-1 pl-lg-5" data-toggle="tooltip" data-placement="bottom"
           title="Web World">Web World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
@@ -99,6 +99,10 @@
           </ul>
         </div>
       </nav>
+      <div>
+        <input type="text" class="search-header__input" placeholder="Axtar">
+        <button class="btn search-header__close"><i class="fas fa-times" aria-hidden="true"></i></button>
+      </div>
 
       <hr class="nav-line">
 
@@ -517,7 +521,7 @@
             <a href="about.html"><button class="btn btn-button">Daha ətraflı</button></a>
           </div>
           <div class="footer-col col-md-4 col-sm-12 order-sm-3">
-            <h3 class="heading">Xəbər və təkliflərdən məlumatlı olun</h3>
+            <h3 class="heading">Xəbərlərdən məlumatlı olun</h3>
             <form>
               <div class="form-group py-3">
                 <input type="email" class="form-control footer-email" id="exampleInputEmail1"
@@ -546,10 +550,11 @@
         </div>
       </div>
     </footer>
+    <div class="search-overlay"></div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
+    <!-- <script src="js/jquery.stellar.min.js"></script> -->
 
     <script type="text/javascript"
       src="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
