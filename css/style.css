@@ -1146,7 +1146,7 @@ a {
     min-height:200vh;
     z-index:1;
     background-color: #fff;
-    margin-bottom: 428.4px;
+    margin-bottom: 458.4px;
 }
 
 #footer{
@@ -1157,7 +1157,7 @@ a {
     left:0;
     width:100%;
     z-index:-1;
-    height: 428.4px;
+    height: 458.4px;
 }
 
 #footer .footer-heading{
@@ -1216,6 +1216,10 @@ a {
 #footer .direction-social-icons .fa-twitter:hover,
 #footer .direction-social-icons .fa-instagram:hover{
     background-color: var(--footer-head-color);
+}
+
+#footer .ww {
+    color: var(--secondary-color);
 }
 
 /* ABOUT */
@@ -2196,6 +2200,25 @@ a {
     .direction-social-icons{
         width: 7rem;
         font-size: 1.3rem;
+    }
+
+    /* modal  */
+    .modal-header .popup-image {
+        opacity: 1;
+    }
+
+    .modal-header .popup-image-text {
+        bottom: 0;
+    }
+
+    .popup-image-text .modal-header-heading {
+        font-size: 1.2rem ;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .modal-menu-price {
+        font-size: 1.2rem;
     }
 
     /* about */
