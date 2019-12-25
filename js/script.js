@@ -1,3 +1,15 @@
+const nav = document.querySelector('.navbar');
+const prevOffset = 0;
+
+window.addEventListener('scroll', () => {
+  let offset = window.pageYOffset;
+  if (offset > 613) {
+    nav.classList.add('nav-scrolled')
+  } else {
+    nav.classList.remove('nav-scrolled')
+  }
+})
+
 //navbar toggler
 $(document).ready(function () {
   //dropdown hover
@@ -166,6 +178,15 @@ $(document).ready(function () {
     });
   }, false);
 
+  //home search input
+  $('.search-header').click(function () {
+    $('.search-header__input, .search-header__close, .search-overlay ').show('3000');
+  })
+
+  $('.search-header__close').click(function () {
+    $('.search-header__input, .search-header__close, .search-overlay ').hide('3000');
+  })
+
   // gallery magnific popup 
   $('.gallery-inner').magnificPopup({
     delegate: 'a', // child items selector, by clicking on it popup will open
@@ -192,45 +213,4 @@ $(document).ready(function () {
     $(this).removeClass("active");
   }
   $(this).addClass("active");
-
-
-  //home search input
-  $('.search-header').click(function () {
-    $('.search-header__input, .search-header__close, .search-overlay ').show('3000');
-  })
-
-  $('.search-header__close').click(function () {
-    $('.search-header__input, .search-header__close, .search-overlay ').hide('3000');
-  })
-
-
-  // $(window).stellar({
-  //   responsive: true,
-  //   parallaxBackgrounds: true,
-  //   parallaxElements: true,
-  //   horizontalScrolling: false,
-  //   hideDistantElements: false,
-  //   scrollProperty: "scroll"
-  // });
-});
-
-const nav = document.querySelector('.navbar');
-const prevOffset = 0;
-
-window.addEventListener('scroll', () => {
-  let offset = window.pageYOffset;
-  if (offset > 613) {
-    nav.classList.add('nav-scrolled')
-  } else {
-    nav.classList.remove('nav-scrolled')
-  }
-})
-
-//aos animation 
-AOS.init({
-  duration: 3000,
-  easing: 'ease-out-back',
-  delay: 600,
-  once: true,
-  disable: 'mobile',
 });

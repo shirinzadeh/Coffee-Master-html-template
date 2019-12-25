@@ -203,6 +203,7 @@ a {
     border-bottom: 1px dashed var(--secondary-color) !important;
     background-color: transparent;
     border: none;
+    padding: 0 1rem;
     text-align: center;
     transition: .3s;
     animation: 1s fromRight forwards;
