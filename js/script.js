@@ -1,5 +1,4 @@
 const nav = document.querySelector('.navbar');
-const prevOffset = 0;
 
 window.addEventListener('scroll', () => {
   let offset = window.pageYOffset;
@@ -172,22 +171,6 @@ $(document).ready(function () {
   $(".btn-about, .close-team-about, .team-b").on("click", toggleBioB);
   $(".btn-about, .close-team-about, .team-c").on("click", toggleBioC);
 
-  //contact form validation
-  window.addEventListener('load', function () {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function (form) {
-      form.addEventListener('submit', function (event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-
   //home search input
   $('.search-header').click(function () {
     $('.search-header__input, .search-header__close, .search-overlay ').show('3000');
@@ -223,4 +206,27 @@ $(document).ready(function () {
     $(this).removeClass("active");
   }
   $(this).addClass("active");
+});
+
+//contact form validation
+window.addEventListener('load', function () {
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function (form) {
+    form.addEventListener('submit', function (event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+}, false);
+
+ScrollReveal().reveal('.animate', {
+  interval: 400,
+  distance: '40px',
+  useDelay: 'always',
+  viewFactor: 0.5 // These elements only reveals once 50% of them are within the viewport.
 });

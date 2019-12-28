@@ -10,10 +10,11 @@
     content="coding, template, coffee template, html, css, js, javascript, jquery, bootstrap, bootstrap4">
   <meta name="author" content="Tahmasib Shirinzadeh">
   <title>Web World</title>
-  <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <!-- mosaic gallery-->
   <link rel="stylesheet" href="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
+  <!-- google fonts Libre+Baskerville, Open+Sans, Varela+Round, Kaushan+Script -->
   <link
     href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Varela+Round|Handlee|Kaushan+Script&display=swap"
     rel="stylesheet">
@@ -23,11 +24,12 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- font awesome js  -->
   <script src="js/all.js"></script>
-  <!-- google fonts Libre+Baskerville, Open+Sans, Varela+Round, Kaushan+Script -->
+  <!-- scrollreveal > always include in the head  -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
-  <div class="main-content">
+  <div class="main-content about__main-content">
     <div class="header-body hero-wrap bg-center"
       style="background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/what-title.jpg')">
       <nav class="navbar navbar-expand-lg d-flex">
@@ -40,7 +42,7 @@
         </button>
 
         <a href="index.html" class="navbar-brand order-lg-1 pl-lg-5" data-toggle="tooltip" data-placement="bottom"
-          title="Web World">Web World</a>
+          title="Coffee World">Coffee World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
         <div class="order-lg-3 pr-3 pr-sm-5 ">
@@ -116,7 +118,7 @@
           <div class="row  ">
             <div class="col-md-12">
               <div class="header-wrap__text">
-                <h1 class="bread">Haqqımızda</h1>
+                <h1 class="bread animate">Haqqımızda</h1>
               </div>
             </div>
           </div>
@@ -129,7 +131,7 @@
         <img src="img/title-above.png" class="title-above d-block mx-auto pt-3 pt-sm-1" alt="Title-above">
         <h3 class="subheading heading-line text-center pt-4">Hekayəmiz</h3>
         <div class="row py-4">
-          <div class="col-md-6 story__left d-flex flex-column align-items-center justify-content-center">
+          <div class="col-md-6 story__left animate d-flex flex-column align-items-center justify-content-center">
             <div class="subheading-text text-center py-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cum molestiae blanditiis, ipsam dignissimos
               alias doloremque quos perferendis praesentium autem quod. Ab maiores blanditiis corrupti itaque ipsa
@@ -143,7 +145,7 @@
               <a href="https://www.instagram.com/webworld.az/"><i class="fab fa-instagram "></i></a>
             </div>
           </div>
-          <div class="col-md-6 pt-4 pt-md-0">
+          <div class="col-md-6 animate pt-4 pt-md-0">
             <div id="home" class="video-hero"
               style="height:100%; background-image: url(img/header-bg.jpg); background-size:cover; background-position: center center;">
               <a class="player"
@@ -157,7 +159,7 @@
     <section id="testimonial" class="testimony-section py-5" style="background-image: url('img/background.jpg')">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 animate">
             <h3 class="subheading heading-line text-center">Testimonial</h3>
           </div>
         </div>
@@ -165,7 +167,7 @@
           <div class="col-12">
             <div class="carousel-testimony owl-carousel owl-theme">
               <div class="item">
-                <div class="testimony-wrap py-4">
+                <div class="testimony-wrap ani py-4">
                   <div class="mb-4 testimonial__img bg-cover" style=" background-image: url('img/person_1.jpg');">
                   </div>
                   <div class="text-center">
@@ -241,11 +243,11 @@
     </section>
 
     <section class="team py-5">
-      <h3 class="subheading heading-line text-center">Komandamız</h3>
+      <h3 class="subheading heading-line animate text-center">Komandamız</h3>
       <div class="team-overlay"></div>
       <div class="page-wrap light-theme py-3">
         <div class="wrap-center wrap-center-a">
-          <div class="team-header">
+          <div class="team-header animate">
             <div class="avatar">
               <div class=""></div>
               <img src="img/person_1.jpg" alt="team member">
@@ -273,7 +275,7 @@
         </div>
 
         <div class="wrap-center wrap-center-b">
-          <div class="team-header">
+          <div class="team-header animate">
             <div class="avatar">
               <div class=""></div>
               <img src="img/person_2.jpg" alt="team member">
@@ -301,7 +303,7 @@
         </div>
 
         <div class="wrap-center wrap-center-c">
-          <div class="team-header">
+          <div class="team-header animate">
             <div class="avatar">
               <div class=""></div>
               <img src="img/person_3.jpg" alt="Team-member">
@@ -332,11 +334,10 @@
       </div>
     </section>
 
-
     <footer id="footer">
-      <h1 class="heading footer-heading text-center pb-4">Web World</h1>
-      <div class="row text-center">
-        <div class="container-fluid text-white d-md-flex">
+      <h1 class="heading footer-heading text-center pt-5 pb-sm-0">Coffee World</h1>
+      <div class="container-fluid">
+        <div class="row text-center d-md-flex  text-white">
           <div class="footer-col col-md-6 ">
             <h3 class="heading">Xəbərlərdən məlumatlı olun</h3>
             <form>
@@ -350,26 +351,24 @@
             </form>
             <div
               class="direction-social-icons footer-social d-flex align-items-center justify-content-between mx-auto mb-3">
-              <a href=""><i class="fab fa-facebook-f "></i></a>
-              <a href=""><i class="fab fa-twitter"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/webworld.az/"><i class="fab fa-facebook-f "></i></a>
+              <a href="https://www.instagramcom/webworld.az/"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
           <div class="footer-col col-md-6">
             <h3 class="heading">Əlaqə</h3>
-            <p class="footer-text py-3 d-none d-sm-block">Lorem ipsum dolor sit amet. <br> Lorem, ipsum dolor <br>sit
-              amet consectetur adipisicing elit.</p>
+            <p class="happyhour-phone">+99451 302 00 66</p>
             <a href="">
               <p class="footer-text footer-contact-mail">office@webworld.az</p>
             </a>
           </div>
         </div>
-        <div class="row text-center pt-3 pt-md-0 pt-xl-3">
+        <div class="row text-center pt-md-0 pt-xl-3">
           <div class="col-md-12">
             <p class="footer-text">Copyright &copy;
               <script>document.write(new Date().getFullYear());</script>
-              Created with <i class="fas fa-heart text-danger"></i> by <a href="http://webworld.az" target="_blank"
-                class="ww">Web World</a> -Tahmasib Shirinzadeh</p>
+              Created by
+              <a href="http://webworld.az" target="_blank" class="ww">Web World</a> -Tahmasib Shirinzadeh</p>
           </div>
         </div>
       </div>

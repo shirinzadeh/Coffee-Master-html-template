@@ -10,10 +10,11 @@
     content="coding, template, coffee template, html, css, js, javascript, jquery, bootstrap, bootstrap4">
   <meta name="author" content="Tahmasib Shirinzadeh">
   <title>Web World</title>
-  <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <!-- mosaic gallery-->
   <link rel="stylesheet" href="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
+  <!-- google fonts Libre+Baskerville, Open+Sans, Varela+Round, Kaushan+Script -->
   <link
     href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Varela+Round|Handlee|Kaushan+Script&display=swap"
     rel="stylesheet">
@@ -23,7 +24,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- font awesome js  -->
   <script src="js/all.js"></script>
-  <!-- google fonts Libre+Baskerville, Open+Sans, Varela+Round, Kaushan+Script -->
+  <!-- scrollreveal > always include in the head  -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
         </button>
 
         <a href="index.html" class="navbar-brand order-lg-1 pl-lg-5" data-toggle="tooltip" data-placement="bottom"
-          title="Web World">Web World</a>
+          title="Coffee World">Coffee World</a>
         <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
 
         <div class="order-lg-3 pr-3 pr-sm-5 ">
@@ -124,9 +126,9 @@
     <section class="menyu py-5 pt-sm-1">
       <div class="container">
         <img src="img/title-above.png" class="title-above d-block mx-auto pt-3 pt-sm-1" alt="Title-above">
-        <h3 class="subheading heading-line text-center pt-4">Günə Özəl</h3>
+        <h3 class="subheading heading-line animate text-center pt-4">Günə Özəl</h3>
         <div class="row py-4">
-          <div class="col-md-6 col-lg-3 pb-4 pb-lg-0">
+          <div class="col-md-6 col-lg-3 animate pb-4 pb-lg-0">
             <img src="img/menu-img.jpg" class="d-block w-100" alt="menu-image">
             <div class="menyu-price">20$</div>
             <div class="menu-name pt-3" data-toggle="modal" data-target="#modalbox">
@@ -134,7 +136,7 @@
               <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 pb-4 pb-lg-0">
+          <div class="col-md-6 col-lg-3 animate pb-4 pb-lg-0">
             <img src="img/menu-img-2.jpg" class="d-block w-100" alt="menu-image">
             <div class="menyu-price">20$</div>
             <div class="menu-name pt-3" data-toggle="modal" data-target="#modalbox">
@@ -142,7 +144,7 @@
               <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 pb-4 pb-lg-0">
+          <div class="col-md-6 col-lg-3 animate pb-4 pb-lg-0">
             <img src="img/menu-img-3.jpg" class="d-block w-100" alt="menu-image">
             <div class="menyu-price">20$</div>
             <div class="menu-name pt-3" data-toggle="modal" data-target="#modalbox">
@@ -150,7 +152,7 @@
               <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 pb-4 pb-lg-0">
+          <div class="col-md-6 col-lg-3 animate pb-4 pb-lg-0">
             <img src="img/menu-img-4.jpg" class="d-block w-100" alt="menu-image">
             <div class="menyu-price">20$</div>
             <div class="menu-name pt-3" data-toggle="modal" data-target="#modalbox">
@@ -512,20 +514,19 @@
     </section>
 
     <footer id="footer">
-      <h1 class="heading footer-heading text-center pb-4">Web World</h1>
-      <div class="container-fluid text-white">
+      <h1 class="heading footer-heading text-center py-4">Coffee World</h1>
+      <div class="container-fluid text-white ">
         <div class="row text-center d-flex">
           <div class="footer-col col-md-4 col-sm-6 order-sm-1 pb-4">
             <h3 class="heading">Haqqımızda</h3>
-            <p class="footer-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              accusantium
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium
               placeat corporis beatae vero cumque eum, quas iusto pariatur?...</p>
             <a href="about.html"><button class="btn btn-button">Daha ətraflı</button></a>
           </div>
           <div class="footer-col col-md-4 col-sm-12 order-sm-3">
             <h3 class="heading">Xəbərlərdən məlumatlı olun</h3>
             <form>
-              <div class="form-group py-3">
+              <div class="form-group">
                 <input type="email" class="form-control footer-email" id="exampleInputEmail1"
                   aria-describedby="emailHelp" placeholder="Email adresiniz" required>
                 <button class="btn btn-button footer-btn">Abunə olun</button>
@@ -533,28 +534,26 @@
               <small id="emailHelp" class="form-text text-muted pb-3">Biz heç vaxt məlumatlarınızı başqaları ilə
                 paylaşmayacağıq.</small>
             </form>
-            <div
-              class="direction-social-icons footer-social d-flex align-items-center justify-content-between mx-auto mb-3">
-              <a href=""><i class="fab fa-facebook-f "></i></a>
-              <a href=""><i class="fab fa-twitter"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-            </div>
           </div>
           <div class="footer-col col-md-4 col-sm-6 order-sm-2">
             <h3 class="heading">Əlaqə</h3>
-            <p class="footer-text py-3 d-none d-sm-block">Lorem ipsum dolor sit amet. <br> Lorem, ipsum dolor <br>sit
-              amet consectetur adipisicing elit.</p>
+            <p class="happyhour-phone">+99451 302 00 66</p>
             <a href="">
               <p class="footer-text footer-contact-mail">office@webworld.az</p>
             </a>
+            <div
+              class="direction-social-icons footer-social d-flex align-items-center justify-content-between mx-auto mb-3">
+              <a href="https://www.facebook.com/webworld.az/"><i class="fab fa-facebook-f "></i></a>
+              <a href="https://www.instagram.com/webworld.az/"><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
-        <div class="row text-center pt-3 pt-md-0 pt-xl-3">
+        <div class="row text-center pt-md-0 pt-xl-3">
           <div class="col-md-12">
             <p class="footer-text">Copyright &copy;
               <script>document.write(new Date().getFullYear());</script>
-              Created with <i class="fas fa-heart text-danger"></i> by <a href="http://webworld.az" target="_blank"
-                class="ww">Web World</a> -Tahmasib Shirinzadeh</p>
+              Created by
+              <a href="http://webworld.az" target="_blank" class="ww">Web World</a> -Tahmasib Shirinzadeh</p>
           </div>
         </div>
       </div>
